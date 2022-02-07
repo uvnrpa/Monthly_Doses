@@ -1,0 +1,68 @@
+% Station Kjeller, integrated monthly doses and sampling fraction (0= complete loss of measurements, 1=lossfree measurement
+% The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
+% All units except PAR: J/m^2. Units PAR: mol/m^2
+% Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
+% E-mail: Bjorn.Johnsen@dsa.no
+%
+% Actionspectra:
+% CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
+% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
+% UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
+% NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
+% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
+% VITD: CIE 174:2006, Action spectrum for the conversion of 7-DH7 to previtamin D3 in human skin
+% ANCHOVY: Action spectrum for damage to eggs and larvae of northern anchovy. Spectrum sugge and sted by: J.H. Hunter, J.H. Taylor, and H.G. Moser, "Effect of ultraviolet irradiation on eggs and larvae of the northern anchovy, Engraulis mordax, and the pacific mackerel, Scomber japonicus, during the embryonic stage", Photochemistry and Photobiology, 29, 325-338, 1979. Downloaded from: http://uv.biospherical.com/Version2/doserates/Hunter.txt
+% FLINTPLANT: Action spectrum for growth responses of plants. Action spectrum suggested by: S. D. Flint and M. M. Caldwell, "A biological spectral weighting function for ozone depletion research with higher plants", Physiologia Plantarum, 117,137-144, 2003. Downloaded from: http://uv.biospherical.com/Version2/doserates/Flint.txt
+% HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
+% PAR: Photosynthetic active radiation, 400-700 nm
+%
+% Gaps in measurements have been filled with ancillary measurement data (Finse), or clear sky modelled data, adjusted for cloud influence. Source of UV-cloud modification factors: Listed below for the respective station and period
+% STRÅNG-based data (http://strang.smhi.se/extraction/index.php) period: 1901	
+% Octa-based data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/, period: 1995	
+% Solar Light SL-501 UV-Biometer measurements (Finse only), from an instrument operated by DSA, period: 1900	- 1900
+% Pyranometer-based gapfilling for stations Landvik, Kise, Trondheim (Kvithamar), Tromsø (Holt), Andøya (Sortland), Blindern (Aas): Pyranometer data provided by Agrometeorology Norway (LMT), http://lmt.bioforsk.no. Period: 1996	1997	1998	1999	2000	2001	2002	2003	2004	2005	2006	2007	2008	2009	2010	2011	2012	2013	2014	2015	2016	2017	2018	2019	2020	2021	
+% Pyranometer-based gapfilling for station Bergen, period 1995-2021: Pyranometer data from the Radiation Observatory at the University of Bergen and clear sky modelled global radiation for all stations is provided by Jan-Asle Olseth (Jan.Olseth@uib.no).
+%
+% Pyranometer-based gapfilling for the stations Trondheim (Gloshaugen), Blindern, period 2017-2021: Pyranometer data from the Norwegian Centre for Climate Services, https://seklima.met.no/observations/
+% Pyranometer-based gapfilling for station Finse, period 2018-2021: Pyranometer data from the Finse Eco-Hydrological Observatory, provided by Norbert Pirk (norbert.pirk@geo.uio.no)
+% Pyranometer-based gapfilling for station Ny-Ålesund, period 1995-2021: (1): Maturilli, Marion; Herber, Andreas; König-Langlo, Gert (2014): Basic and other measurements of radiation from the Baseline Surface Radiation Network (BSRN) Station Ny-Ålesund in the years 1992 to 2013, reference list of 253 datasets. PANGAEA, https://doi.org/10.1594/PANGAEA.150000. (2): Maturilli, Marion (2020): Basic and other measurements of radiation at station Ny-Ålesund (2006-05 et seq). Alfred Wegener Institute - Research Unit Potsdam, PANGAEA, https://doi.org/10.1594/PANGAEA.914927
+% Seasonally mean period: 2019	2020	
+%
+% Columns: Year	Mon	Day	Daynum	Hour	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
+2019	1	  1.5603E+03	  1.6096E+03	  3.9119E+03	  1.8872E+06	  2.5305E+03	  2.6992E+02	  7.8947E+02	  3.9383E+01	  3.1832E+04	  4.7996E+06	  6.3387E+01	0.000
+2019	2	  4.4679E+03	  4.5485E+03	  2.0280E+04	  4.0383E+06	  8.0525E+03	  9.9461E+02	  3.8083E+03	  1.3519E+02	  7.0083E+04	  1.0710E+07	  1.4649E+02	0.000
+2019	3	  1.7006E+04	  1.7210E+04	  9.9510E+04	  1.2499E+07	  3.2820E+04	  4.6770E+03	  1.9359E+04	  5.6825E+02	  2.1967E+05	  3.3703E+07	  4.6523E+02	0.000
+2019	4	  4.3466E+04	  4.3816E+04	  3.0440E+05	  2.3708E+07	  9.0400E+04	  1.6002E+04	  6.5151E+04	  1.6107E+03	  4.3023E+05	  6.4111E+07	  8.8889E+02	0.000
+2019	5	  5.1159E+04	  5.1569E+04	  3.6433E+05	  2.6927E+07	  1.0714E+05	  1.9331E+04	  7.8685E+04	  1.9138E+03	  4.9166E+05	  7.1662E+07	  9.9034E+02	0.000
+2019	6	  6.4903E+04	  6.5368E+04	  4.7675E+05	  2.8519E+07	  1.3986E+05	  2.8324E+04	  1.0948E+05	  2.5288E+03	  5.3786E+05	  7.4484E+07	  1.0279E+03	0.119
+2019	7	  8.4311E+04	  8.4906E+04	  6.1414E+05	  3.6037E+07	  1.8272E+05	  3.6804E+04	  1.4193E+05	  3.3049E+03	  6.8385E+05	  9.2731E+07	  1.2739E+03	0.991
+2019	8	  5.2316E+04	  5.2694E+04	  3.7653E+05	  2.3929E+07	  1.1234E+05	  2.1352E+04	  8.4437E+04	  2.0100E+03	  4.4896E+05	  6.1437E+07	  8.4213E+02	1.000
+2019	9	  2.4290E+04	  2.4477E+04	  1.6338E+05	  1.3101E+07	  5.0685E+04	  8.7158E+03	  3.4971E+04	  8.9627E+02	  2.3911E+05	  3.5085E+07	  4.8947E+02	1.000
+2019	10	  9.0903E+03	  9.1862E+03	  4.7777E+04	  6.3229E+06	  1.7961E+04	  2.4569E+03	  9.6348E+03	  3.0699E+02	  1.1216E+05	  1.6937E+07	  2.3610E+02	0.999
+2019	11	  2.3168E+03	  2.3591E+03	  7.8592E+03	  2.0283E+06	  4.3765E+03	  4.2505E+02	  1.5671E+03	  6.9870E+01	  3.5396E+04	  4.9719E+06	  6.5712E+01	1.000
+2019	12	  1.2632E+03	  1.2956E+03	  3.2221E+03	  1.2684E+06	  2.3965E+03	  2.1097E+02	  6.9299E+02	  3.6305E+01	  2.1642E+04	  3.1178E+06	  4.0464E+01	1.000
+2020	1	  1.7244E+03	  1.7650E+03	  4.8690E+03	  1.7843E+06	  3.1183E+03	  3.0797E+02	  1.0065E+03	  4.7982E+01	  3.0309E+04	  4.6697E+06	  6.2689E+01	1.000
+2020	2	  5.4479E+03	  5.5426E+03	  2.3576E+04	  5.1590E+06	  9.6996E+03	  1.1127E+03	  4.2723E+03	  1.5994E+02	  8.8218E+04	  1.4116E+07	  1.9564E+02	0.989
+2020	3	  1.7919E+04	  1.8123E+04	  1.0772E+05	  1.3655E+07	  3.4377E+04	  4.6208E+03	  2.0121E+04	  5.9493E+02	  2.3720E+05	  3.8343E+07	  5.3817E+02	0.998
+2020	4	  4.6607E+04	  4.6934E+04	  3.2716E+05	  2.3565E+07	  9.8731E+04	  1.7807E+04	  7.1439E+04	  1.7419E+03	  4.3295E+05	  6.4557E+07	  9.0740E+02	0.989
+2020	5	  6.8053E+04	  6.8535E+04	  4.8017E+05	  3.3419E+07	  1.4477E+05	  2.6467E+04	  1.0607E+05	  2.5790E+03	  6.1821E+05	  8.9809E+07	  1.2502E+03	1.000
+2020	6	  8.9743E+04	  9.0324E+04	  6.5827E+05	  3.6491E+07	  1.9618E+05	  4.0977E+04	  1.5520E+05	  3.5492E+03	  6.9661E+05	  9.7295E+07	  1.3606E+03	1.000
+2020	7	  7.1192E+04	  7.1668E+04	  5.1338E+05	  3.1228E+07	  1.5400E+05	  3.0219E+04	  1.1762E+05	  2.7701E+03	  5.8940E+05	  8.2303E+07	  1.1429E+03	0.998
+2020	8	  6.1314E+04	  6.1714E+04	  4.4308E+05	  2.7216E+07	  1.3260E+05	  2.6034E+04	  1.0120E+05	  2.3670E+03	  5.1100E+05	  7.3555E+07	  1.0329E+03	1.000
+2020	9	  3.0302E+04	  3.0508E+04	  2.0716E+05	  1.5401E+07	  6.4036E+04	  1.1529E+04	  4.5431E+04	  1.1335E+03	  2.8296E+05	  4.2438E+07	  6.0105E+02	1.000
+2020	10	  7.9679E+03	  8.0515E+03	  4.0643E+04	  5.7333E+06	  1.5638E+04	  2.0835E+03	  8.1361E+03	  2.6464E+02	  1.0113E+05	  1.5753E+07	  2.2183E+02	1.000
+2020	11	  2.5244E+03	  2.5687E+03	  8.2455E+03	  2.3036E+06	  4.7202E+03	  4.6637E+02	  1.6627E+03	  7.4085E+01	  3.9796E+04	  6.0456E+06	  8.2366E+01	0.967
+2020	12	  6.5623E+02	  6.7329E+02	  1.6438E+03	  6.7209E+05	  1.2490E+03	  1.0827E+02	  3.5304E+02	  1.8662E+01	  1.1420E+04	  1.6778E+06	  2.1902E+01	1.000
+2021	1	  2.1604E+03	  2.2237E+03	  6.1637E+03	  2.4463E+06	  3.6584E+03	  3.8766E+02	  1.2158E+03	  5.7871E+01	  4.1292E+04	  6.1678E+06	  8.0898E+01	0.968
+2021	2	  5.5453E+03	  5.6571E+03	  2.3696E+04	  5.4424E+06	  9.6406E+03	  1.1361E+03	  4.2702E+03	  1.6086E+02	  9.2961E+04	  1.4358E+07	  1.9507E+02	1.000
+2021	3	  1.9330E+04	  1.9546E+04	  1.1575E+05	  1.4004E+07	  3.7566E+04	  5.1973E+03	  2.2156E+04	  6.5441E+02	  2.4558E+05	  3.8147E+07	  5.3038E+02	1.000
+2021	4	  4.2633E+04	  4.3014E+04	  2.8774E+05	  2.6145E+07	  8.6761E+04	  1.3653E+04	  5.8115E+04	  1.5148E+03	  4.6715E+05	  7.1165E+07	  9.8721E+02	1.000
+2021	5	  5.1769E+04	  5.2181E+04	  3.6756E+05	  2.5230E+07	  1.0987E+05	  2.0425E+04	  8.1372E+04	  1.9715E+03	  4.6863E+05	  6.4602E+07	  8.7958E+02	1.000
+2021	6	  8.6552E+04	  8.7178E+04	  6.3726E+05	  3.5388E+07	  1.8852E+05	  3.9552E+04	  1.4981E+05	  3.4279E+03	  6.7675E+05	  9.0089E+07	  1.2325E+03	1.000
+2021	7	  8.3106E+04	  8.3707E+04	  6.1044E+05	  3.4321E+07	  1.8083E+05	  3.7650E+04	  1.4308E+05	  3.2846E+03	  6.5494E+05	  8.7626E+07	  1.2003E+03	1.000
+2021	8	  5.4628E+04	  5.5040E+04	  3.9063E+05	  2.6114E+07	  1.1648E+05	  2.1862E+04	  8.6773E+04	  2.0792E+03	  4.8564E+05	  6.7984E+07	  9.3487E+02	1.000
+2021	9	  2.9732E+04	  2.9955E+04	  2.0697E+05	  1.4405E+07	  6.3150E+04	  1.1911E+04	  4.6175E+04	  1.1278E+03	  2.6734E+05	  3.7797E+07	  5.2421E+02	1.000
+2021	10	  9.2485E+03	  9.3486E+03	  4.8242E+04	  6.2961E+06	  1.8357E+04	  2.5892E+03	  9.8916E+03	  3.1440E+02	  1.1217E+05	  1.6519E+07	  2.2838E+02	1.000
+2021	11	  2.4851E+03	  2.5364E+03	  8.2009E+03	  2.3874E+06	  4.5102E+03	  4.5342E+02	  1.6077E+03	  7.1673E+01	  4.1079E+04	  6.0713E+06	  8.1103E+01	1.000
+2021	12	  1.2654E+03	  1.3038E+03	  3.2041E+03	  1.3944E+06	  2.2664E+03	  2.1771E+02	  6.7544E+02	  3.4686E+01	  2.3541E+04	  3.4402E+06	  4.4434E+01	1.000
